@@ -50,9 +50,9 @@ window.CD_CONFIG = {
 
   /* --- Social / YouTube --- */
   social: {
-    youtube: "https://www.youtube.com/@clouddesign",
-    x: "https://x.com/clouddesign",
-    linkedin: "https://www.linkedin.com/company/clouddesign",
+    youtube: "",                                   // your channel URL, e.g. https://www.youtube.com/@yourchannel
+    x: "",
+    linkedin: "",
     github: "https://github.com/WEBWORKSA1/cloud-design",
     discord: ""
   },
