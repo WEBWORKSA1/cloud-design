@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cloud.design/</loc><lastmod>2026-09-19</lastmod><priority>1.0</priority></url>
+  <url><loc>https://cloud.design/architectures.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/patterns.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/tools.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/directory.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/learn.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/glossary.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/get-matched.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/partners.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/support.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/contests.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/careers.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/about.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/contact.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/privacy.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/terms.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/guides/cloud-migration-checklist.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/guides/reduce-cloud-bill.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/guides/aws-vs-azure-vs-gcp.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/guides/serverless-vs-containers.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/guides/well-architected-review.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cloud.design/guides/genai-architecture.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
+</urlset>
