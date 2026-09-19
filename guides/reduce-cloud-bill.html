@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>17 Proven Ways to Cut Your Cloud Bill by 30%+ | Cloud.Design</title>
+<meta name="description" content="Rightsizing, commitments, spot, storage tiering, egress and the tagging discipline that makes it stick.">
+<link rel="canonical" href="https://cloud.design/guides/reduce-cloud-bill.html">
+<meta name="theme-color" content="#3b5bfd">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Cloud.Design">
+<meta property="og:title" content="17 Proven Ways to Cut Your Cloud Bill by 30%+ | Cloud.Design"><meta property="og:description" content="Rightsizing, commitments, spot, storage tiering, egress and the tagging discipline that makes it stick.">
+<meta property="og:url" content="https://cloud.design/guides/reduce-cloud-bill.html"><meta property="og:image" content="https://cloud.design/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem("cd_theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "17 Proven Ways to Cut Your Cloud Bill by 30%+", "description": "Rightsizing, commitments, spot, storage tiering, egress and the tagging discipline that makes it stick.", "author": {"@type": "Organization", "name": "Cloud.Design"}, "publisher": {"@type": "Organization", "name": "Cloud.Design"}, "datePublished": "2026-09-19", "mainEntityOfPage": "https://cloud.design/guides/reduce-cloud-bill.html"}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">🏆 The <b>Cloud Architecture Challenge</b> is live — $5,000 in prizes. <a href="../contests.html">Enter free →</a></div>
+<header class="site"><div class="container nav">
+<a class="logo" href="../index.html" aria-label="Cloud.Design home"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.1 4.5 4.5 0 0 0 7 18Z" fill="#fff"/></svg></span><span>Cloud<span class="dot">.</span>Design</span></a>
+<ul class="menu" id="menu"><li><a href="../architectures.html">Architectures</a></li><li><a href="../patterns.html">Patterns</a></li><li><a href="../tools.html">Free Tools</a></li><li><a href="../directory.html">Directory</a></li><li><a href="../learn.html">Learn</a></li><li><a href="../contests.html">Contests</a></li><li><a href="../support.html">Support</a></li><li><a href="../partners.html">For Partners</a></li></ul>
+<div class="nav-actions">
+<button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+<a class="btn btn-primary btn-sm btn-sm-hide" href="../get-matched.html">Get Expert Help</a>
+<button class="icon-btn burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></div></header>
+<main id="main">
+<section class="page-hero"><div class="container"><nav class="crumbs"><a href="../index.html">Home</a> / <a href="../learn.html">Learn</a> / Cost</nav><span class="tag">Cost</span><h1 class="mt1">17 Proven Ways to Cut Your Cloud Bill by 30%+</h1><p class="muted small">⏱ 11 min read · Updated September 2026 · Cloud.Design Editorial</p>
+<div class="flex small"><span>Share:</span><a data-share-to="x">X</a><a data-share-to="linkedin">LinkedIn</a><a data-share-to="reddit">Reddit</a><a data-share-to="email">Email</a></div></div></section>
+<section class="section"><div class="container with-side"><article class="prose">
+<p>Industry surveys such as Flexera's <em>State of the Cloud</em> keep finding that organizations believe roughly a quarter to a third of their cloud spend is wasted. The levers below are ordered roughly by effort-to-impact ratio.</p>
+<h2>Quick wins (week 1)</h2><ol><li><b>Delete idle resources</b> — unattached volumes, old snapshots, idle load balancers, unused elastic IPs.</li><li><b>Schedule non-production</b> — shutting dev/test down nights and weekends cuts their compute cost by ~65%.</li><li><b>Rightsize</b> — instances averaging under 20% CPU are candidates to go one or two sizes down.</li><li><b>Move to current-generation instances</b> — newer families usually deliver better price-performance.</li><li><b>Adopt ARM</b> — Graviton, Cobalt and Axion-class instances are typically cheaper per unit of performance for compatible workloads.</li></ol>
+<h2>Commitments (month 1)</h2><ol start="6"><li><b>Savings Plans / Reservations</b> for your steady-state baseline — commit to roughly the floor of usage, not the average.</li><li><b>Spot / preemptible</b> for stateless, fault-tolerant, batch and CI workloads.</li><li><b>Database reservations</b> — often forgotten, often large.</li></ol>
+<h2>Storage &amp; data (month 1–2)</h2><ol start="9"><li><b>Lifecycle policies</b> to infrequent-access and archive tiers.</li><li><b>Intelligent tiering</b> where access patterns are unknown.</li><li><b>Compress and deduplicate logs</b>; cut retention to what compliance requires.</li><li><b>Reduce egress</b> with CDNs, regional affinity and private connectivity.</li><li><b>Watch NAT gateway data processing</b> — use VPC endpoints for object storage traffic.</li></ol>
+<h2>Architecture (quarter 1)</h2><ol start="14"><li><b>Go serverless for spiky, low-duty-cycle workloads.</b></li><li><b>Autoscale on real metrics</b> rather than static peak capacity.</li><li><b>Cache aggressively</b> to shrink database tiers.</li></ol>
+<h2>Make it stick</h2><ol start="17"><li><b>Tag everything and show teams their own spend.</b> Unit economics (cost per customer, per transaction) turn cost from a finance problem into an engineering metric.</li></ol>
+<p>Try our <a href="../tools.html#estimator">multi-cloud estimator</a> to model commitment discounts, or get a <a href="../get-matched.html?service=cost">free cost review</a>.</p>
+
+<div class="ad-slot" data-ad="inContent">Ad space</div>
+<div class="card mt2"><h3>Want this done for you?</h3><p class="small">Get a free review from a certified architect — matched to your cloud and budget.</p><a class="btn btn-primary" href="../get-matched.html?service=cost">Get a free review →</a></div></article>
+<aside><div class="sticky"><div class="ad-slot sidebar" data-ad="sidebar">Ad space</div><div class="card mt1"><h3>📬 Weekly teardown</h3><form class="form" data-form="newsletter"><input class="hp" name="_gotcha" tabindex="-1" autocomplete="off"><input type="email" name="email" placeholder="you@company.com" required aria-label="Email"><button class="btn btn-primary btn-block" type="submit">Subscribe</button></form></div></div></aside>
+</div></section></main>
+<footer class="site"><div class="container">
+<div class="foot">
+<div><a class="logo" href="../index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.1 4.5 4.5 0 0 0 7 18Z" fill="#fff"/></svg></span><span>Cloud<span class="dot">.</span>Design</span></a>
+<p class="small mt1">The independent hub for designing, costing and building cloud architecture on AWS, Azure and Google Cloud.</p>
+<form class="form" data-form="newsletter" data-success="You're in! Check your inbox for the Architecture Starter Kit."><input class="hp" name="_gotcha" tabindex="-1" autocomplete="off"><div class="flex" style="flex-wrap:nowrap"><input type="email" name="email" placeholder="you@company.com" required aria-label="Email"><button class="btn btn-primary btn-sm" type="submit">Subscribe</button></div><span class="small muted">Weekly architecture teardown. 1-click unsubscribe.</span></form>
+<div class="social"><a class="icon-btn" data-social="youtube" aria-label="YouTube">▶</a><a class="icon-btn" data-social="x" aria-label="X">𝕏</a><a class="icon-btn" data-social="linkedin" aria-label="LinkedIn">in</a><a class="icon-btn" data-social="github" aria-label="GitHub">⌥</a></div>
+</div>
+<div><h4>Design</h4><ul><li><a href="../architectures.html">Reference Architectures</a></li><li><a href="../patterns.html">Design Patterns</a></li><li><a href="../tools.html#estimator">Cost Estimator</a></li><li><a href="../tools.html#quiz">Well-Architected Score</a></li><li><a href="../tools.html#instances">Instance Prices</a></li></ul></div>
+<div><h4>Learn</h4><ul><li><a href="../learn.html">Guides</a></li><li><a href="../learn.html#videos">Videos</a></li><li><a href="../glossary.html">Glossary</a></li><li><a href="../directory.html">Tools Directory</a></li><li><a href="../contests.html">Contests</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="../get-matched.html">Get Matched</a></li><li><a href="../get-matched.html?service=migration">Cloud Migration</a></li><li><a href="../get-matched.html?service=cost">Cost Optimization</a></li><li><a href="../partners.html">Become a Partner</a></li><li><a href="../careers.html">Careers &amp; Talent</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../support.html">Donate / Support</a></li><li><a href="../support.html#advertise">Advertise</a></li><li><a href="../contact.html">Contact</a></li><li><a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a></li></ul></div>
+</div>
+<div class="foot-bottom"><span>© <span data-year></span> Cloud.Design · Independent. Not affiliated with AWS, Microsoft or Google. Some links are affiliate or sponsored and clearly labeled.</span><span><a href="../privacy.html#cookies">Cookie settings</a></span></div>
+</div></footer>
+
+<div class="cookie" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics and to show ads that keep Cloud.Design free. Choose what you allow — see our <a href="../privacy.html">privacy policy</a>.</p><div class="flex"><button class="btn btn-primary btn-sm" data-consent="all">Accept all</button><button class="btn btn-ghost btn-sm" data-consent="essential">Essential only</button></div></div>
+
+<div class="modal" id="exit-modal"><div class="box" role="dialog" aria-modal="true" aria-labelledby="exit-t"><button class="icon-btn x" aria-label="Close">✕</button>
+<span class="badge hot">FREE DOWNLOAD</span><h2 id="exit-t" class="mt1">Before you go — grab the Cloud Architecture Starter Kit</h2>
+<p>18 editable reference diagrams, the 47-step migration checklist and a cost-optimization cheat sheet.</p>
+<form class="form" data-form="newsletter" data-success="Sent! Check your inbox for the Starter Kit."><input class="hp" name="_gotcha" tabindex="-1" autocomplete="off"><input type="hidden" name="source" value="exit-intent"><input type="email" name="email" placeholder="Work email" required aria-label="Work email"><button class="btn btn-primary btn-block" type="submit">Send me the kit →</button><span class="small muted center">No spam. Unsubscribe anytime.</span></form></div></div>
+
+<a class="btn btn-primary sticky-cta" href="../get-matched.html">💬 Free architecture consult</a>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/main.js" defer></script>
+</body></html>
