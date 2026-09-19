@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud.Design — Cloud Architecture Diagrams, Cost Calculators & Expert Help</title>
+<meta name="description" content="Free AWS, Azure & Google Cloud reference architectures, multi-cloud cost estimator, design patterns and vetted cloud architects. Design the cloud right the first time.">
+<link rel="canonical" href="https://cloud.design/">
+<meta name="theme-color" content="#3b5bfd">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Cloud.Design">
+<meta property="og:title" content="Cloud.Design — Cloud Architecture Diagrams, Cost Calculators & Expert Help"><meta property="og:description" content="Free AWS, Azure & Google Cloud reference architectures, multi-cloud cost estimator, design patterns and vetted cloud architects. Design the cloud right the first time.">
+<meta property="og:url" content="https://cloud.design/"><meta property="og:image" content="https://cloud.design/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem("cd_theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Cloud.Design", "url": "https://cloud.design/", "potentialAction": {"@type": "SearchAction", "target": "https://cloud.design/architectures.html?q={search_term_string}", "query-input": "required name=search_term_string"}}, {"@type": "Organization", "name": "Cloud.Design", "url": "https://cloud.design/", "logo": "https://cloud.design/assets/img/favicon.svg"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">🏆 The <b>Cloud Architecture Challenge</b> is live — $5,000 in prizes. <a href="contests.html">Enter free →</a></div>
+<header class="site"><div class="container nav">
+<a class="logo" href="index.html" aria-label="Cloud.Design home"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.1 4.5 4.5 0 0 0 7 18Z" fill="#fff"/></svg></span><span>Cloud<span class="dot">.</span>Design</span></a>
+<ul class="menu" id="menu"><li><a href="architectures.html">Architectures</a></li><li><a href="patterns.html">Patterns</a></li><li><a href="tools.html">Free Tools</a></li><li><a href="directory.html">Directory</a></li><li><a href="learn.html">Learn</a></li><li><a href="contests.html">Contests</a></li><li><a href="support.html">Support</a></li><li><a href="partners.html">For Partners</a></li></ul>
+<div class="nav-actions">
+<button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+<a class="btn btn-primary btn-sm btn-sm-hide" href="get-matched.html">Get Expert Help</a>
+<button class="icon-btn burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></div></header>
+<main id="main">
+
+<section class="hero"><div class="container split">
+<div><span class="badge">● New: 2026 Multi-Cloud Price Index</span>
+<h1 class="mt1">Design the cloud <span class="grad">right the first time.</span></h1>
+<p class="lead">Free reference architectures, cost calculators and design patterns for AWS, Azure and Google Cloud — plus on-demand access to vetted cloud architects when you need hands on keyboards.</p>
+<form class="search-hero mt2" data-search role="search"><input type="search" placeholder="Search architectures: serverless, RAG, landing zone…" aria-label="Search architectures"><button class="btn btn-primary btn-sm" type="submit">Search</button></form>
+<div class="hero-cta"><a class="btn btn-primary" href="get-matched.html">Get a free architecture review →</a><a class="btn btn-ghost" href="tools.html#estimator">Estimate my cloud bill</a></div>
+<div class="trust"><span><b data-count="18">18</b> reference architectures</span><span><b data-count="20">20</b> design patterns</span><span><b data-count="30">30</b> vetted tools</span><span><b>100%</b> free</span></div>
+</div>
+<div class="hero-visual reveal"><svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example cloud architecture diagram">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#3b5bfd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+<rect x="10" y="10" width="500" height="340" rx="18" fill="none" stroke="url(#g)" stroke-dasharray="6 6" opacity=".6"/>
+<text x="28" y="38" font-size="12" font-weight="700" fill="currentColor" opacity=".6">REGION · us-east-1</text>
+<g font-size="12" font-weight="600" fill="currentColor" text-anchor="middle">
+<rect x="30" y="150" width="90" height="56" rx="12" fill="#06b6d4" fill-opacity=".14" stroke="#06b6d4"/><text x="75" y="182">Users</text>
+<rect x="160" y="150" width="100" height="56" rx="12" fill="#3b5bfd" fill-opacity=".14" stroke="#3b5bfd"/><text x="210" y="176">CDN + WAF</text><text x="210" y="192" font-size="10" opacity=".7">edge</text>
+<rect x="300" y="70" width="100" height="56" rx="12" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed"/><text x="350" y="102">Web tier</text>
+<rect x="300" y="150" width="100" height="56" rx="12" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed"/><text x="350" y="182">API tier</text>
+<rect x="300" y="230" width="100" height="56" rx="12" fill="#7c3aed" fill-opacity=".14" stroke="#7c3aed"/><text x="350" y="262">Workers</text>
+<rect x="430" y="110" width="70" height="56" rx="12" fill="#10b981" fill-opacity=".14" stroke="#10b981"/><text x="465" y="142">DB</text>
+<rect x="430" y="200" width="70" height="56" rx="12" fill="#f59e0b" fill-opacity=".14" stroke="#f59e0b"/><text x="465" y="232">Queue</text>
+</g>
+<g stroke="currentColor" stroke-opacity=".35" stroke-width="1.6" fill="none">
+<path d="M120 178H160"/><path d="M260 178C280 178 280 98 300 98"/><path d="M260 178H300"/><path d="M260 178C280 178 280 258 300 258"/>
+<path d="M400 98C415 98 415 138 430 138"/><path d="M400 178C415 178 415 138 430 138"/><path d="M400 178C415 178 415 228 430 228"/><path d="M400 258C415 258 415 228 430 228"/>
+</g>
+<g><rect x="300" y="306" width="200" height="30" rx="8" fill="#10b981" fill-opacity=".14"/><text x="400" y="326" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">Est. $1,284/mo · 99.95% SLA</text></g>
+</svg></div>
+</div></section>
+
+<div class="container"><div class="ad-slot" data-ad="header">Ad space — configure AdSense in assets/js/config.js</div></div>
+
+<section class="section"><div class="container">
+<div class="section-head"><span class="eyebrow">Everything in one place</span><h2>From whiteboard to production</h2><p>Official provider docs are scattered across three clouds. Cloud.Design puts the diagrams, decisions and dollar figures side by side.</p></div>
+<div class="grid g3">
+<a class="card reveal" href="architectures.html"><div class="ico">📐</div><h3>Reference Architectures</h3><p class="small mb0">Battle-tested blueprints with diagrams, trade-offs and real monthly cost ranges. Download as SVG.</p></a>
+<a class="card reveal" href="tools.html#estimator"><div class="ico">💲</div><h3>Multi-Cloud Cost Estimator</h3><p class="small mb0">Price the same workload on AWS, Azure and GCP in seconds — including egress and commitments.</p></a>
+<a class="card reveal" href="tools.html#quiz"><div class="ico">🛡️</div><h3>Well-Architected Score</h3><p class="small mb0">12 questions, 6 pillars. Get a scored report with prioritized fixes.</p></a>
+<a class="card reveal" href="patterns.html"><div class="ico">🧩</div><h3>Design Pattern Catalog</h3><p class="small mb0">Circuit breaker, saga, CQRS, strangler fig and more — problem, solution, when to use.</p></a>
+<a class="card reveal" href="tools.html#instances"><div class="ico">📊</div><h3>Instance Price Compare</h3><p class="small mb0">Sortable VM pricing across clouds, per hour, month or year. Export to CSV.</p></a>
+<a class="card reveal" href="get-matched.html"><div class="ico">🤝</div><h3>Expert Matching</h3><p class="small mb0">Describe your project in 60 seconds; meet up to 3 certified partners who fit your budget.</p></a>
+</div></div></section>
+
+<section class="section alt"><div class="container">
+<div class="flex between"><div><span class="eyebrow tag">Library</span><h2 class="mt1">Popular reference architectures</h2></div><a class="btn btn-ghost" href="architectures.html">View all →</a></div>
+<div class="grid g3 mt2" id="arch-grid" data-limit="6"></div>
+</div></section>
+
+<section class="section"><div class="container"><div class="lead-band"><div class="split">
+<div><span class="badge" style="background:#ffffff26;color:#fff">FREE EXPERT MATCHING</span>
+<h2 class="mt1">Get your cloud project designed, costed &amp; built by vetted experts</h2>
+<p>Tell us what you're building. Within 1 business day we introduce up to 3 certified AWS, Azure or Google Cloud partners that fit your budget — with a free architecture review.</p>
+<ul class="checks"><li>Certified partners only — AWS, Microsoft &amp; Google credentials verified</li><li>Organizations waste ~29% of cloud spend (Flexera State of the Cloud) — our partners target that first</li><li>You choose. Zero obligation, zero cost to you</li></ul>
+<p class="small">Prefer to talk? <a href="contact.html" style="color:#fff;text-decoration:underline">Book a 15-min call</a></p></div>
+<div><form class="wizard" data-wizard data-cta="Get my free matches →" novalidate onsubmit="return false">
+<input class="hp" name="_gotcha" tabindex="-1" autocomplete="off">
+<div class="progress"><span></span></div><div class="step-count"><span data-step-count></span><span>⏱ 60 seconds</span></div>
+<div class="step"><h3>What do you need help with?</h3><p class="small">Pick the closest match — you can add detail later.</p><div class="choices"><label class="choice"><input type="radio" name="service" value="migration" required><span>🚚 Cloud migration</span></label><label class="choice"><input type="radio" name="service" value="cost"><span>💰 Cut cloud costs</span></label><label class="choice"><input type="radio" name="service" value="architecture"><span>📐 Architecture design / review</span></label><label class="choice"><input type="radio" name="service" value="devops"><span>⚙️ DevOps, Kubernetes & IaC</span></label><label class="choice"><input type="radio" name="service" value="security"><span>🔐 Security & compliance</span></label><label class="choice"><input type="radio" name="service" value="ai"><span>🤖 AI / GenAI platform</span></label></div></div><div class="step"><h3>Which cloud?</h3><p class="small">Not sure is a perfectly good answer.</p><div class="choices"><label class="choice"><input type="radio" name="cloud" value="AWS" required><span>🟧 AWS</span></label><label class="choice"><input type="radio" name="cloud" value="Azure"><span>🟦 Microsoft Azure</span></label><label class="choice"><input type="radio" name="cloud" value="GCP"><span>🟩 Google Cloud</span></label><label class="choice"><input type="radio" name="cloud" value="Multi / not sure"><span>🌐 Multi-cloud / not sure</span></label></div></div><div class="step"><h3>Current monthly cloud spend?</h3><p class="small">Helps us match partners that fit your scale.</p><div class="choices"><label class="choice"><input type="radio" name="spend" value="Not on cloud yet" required><span>Not on cloud yet</span></label><label class="choice"><input type="radio" name="spend" value="< $1k"><span>Under $1k</span></label><label class="choice"><input type="radio" name="spend" value="$1k–$10k"><span>$1k – $10k</span></label><label class="choice"><input type="radio" name="spend" value="$10k–$50k"><span>$10k – $50k</span></label><label class="choice"><input type="radio" name="spend" value="$50k+"><span>$50k+</span></label></div></div><div class="step"><h3>Project budget?</h3><p class="small">Ranges based on Clutch.co cloud-consulting benchmarks.</p><div class="choices"><label class="choice"><input type="radio" name="budget" value="< $10k" required><span>Under $10k</span></label><label class="choice"><input type="radio" name="budget" value="$10k–$49k"><span>$10k – $49k</span></label><label class="choice"><input type="radio" name="budget" value="$50k–$199k"><span>$50k – $199k</span></label><label class="choice"><input type="radio" name="budget" value="$200k+"><span>$200k+</span></label></div></div><div class="step"><h3>When do you want to start?</h3><p class="small"></p><div class="choices"><label class="choice"><input type="radio" name="timeline" value="ASAP" required><span>⚡ ASAP</span></label><label class="choice"><input type="radio" name="timeline" value="Within 1 month"><span>Within 1 month</span></label><label class="choice"><input type="radio" name="timeline" value="Within 3 months"><span>Within 3 months</span></label><label class="choice"><input type="radio" name="timeline" value="Researching"><span>Just researching</span></label></div></div><div class="step"><h3>Company size?</h3><p class="small"></p><div class="choices"><label class="choice"><input type="radio" name="size" value="1-50" required><span>1 – 50</span></label><label class="choice"><input type="radio" name="size" value="51-200"><span>51 – 200</span></label><label class="choice"><input type="radio" name="size" value="201-1000"><span>201 – 1,000</span></label><label class="choice"><input type="radio" name="size" value="1000+"><span>1,000+</span></label></div></div><div class="step"><h3>Where should we send your matches?</h3><p class="small">A human architect reviews every brief. We never sell your data to lists.</p>
+<div class="form"><div class="row2"><div class="field"><label for="w-name">Full name</label><input id="w-name" type="text" name="name" autocomplete="name" required></div>
+<div class="field"><label for="w-email">Work email</label><input id="w-email" type="email" name="email" autocomplete="email" required></div></div>
+<div class="row2"><div class="field"><label for="w-co">Company</label><input id="w-co" type="text" name="company" autocomplete="organization" required></div>
+<div class="field"><label for="w-ph">Phone <span class="hint">(optional)</span></label><input id="w-ph" type="tel" name="phone" autocomplete="tel"></div></div>
+<div class="field"><label for="w-msg">Anything else? <span class="hint">(optional)</span></label><textarea id="w-msg" name="details" placeholder="e.g. 40 VMs on VMware, SQL Server, need to exit data center by Q2"></textarea></div>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted by Cloud.Design and up to 3 matched partners about this request.</label></div></div>
+<div class="wiz-nav"><button type="button" class="btn btn-ghost" data-back>← Back</button><button type="button" class="btn btn-primary" data-next>Continue →</button></div>
+<div class="guarantee"><span>🔒 No spam, ever</span><span>✅ Free, no obligation</span><span>⭐ Vetted partners only</span></div>
+</form></div></div></div></div></section>
+
+<section class="section"><div class="container">
+<div class="section-head"><span class="eyebrow">Watch &amp; learn</span><h2>Cloud architecture, explained on video</h2><p>Hand-picked explainers on the Well-Architected Framework, migrations and modern design.</p></div>
+<div class="grid g3" id="video-grid" data-limit="3"></div>
+<div class="center mt2"><a class="btn btn-ghost" href="learn.html#videos">More videos →</a> <a class="btn btn-ghost" data-social="youtube" href="#" target="_blank" rel="noopener">▶ Subscribe on YouTube</a></div>
+</div></section>
+
+<div class="container"><div class="ad-slot" data-ad="inContent">Ad space — configure AdSense in assets/js/config.js</div></div>
+
+<section class="section alt"><div class="container">
+<div class="flex between"><h2>Latest guides</h2><a class="btn btn-ghost" href="learn.html">All guides →</a></div>
+<div class="grid g3 mt2" id="guide-grid" data-limit="3"></div>
+</div></section>
+
+<section class="section"><div class="container grid g3">
+<div class="card"><div class="ico">🏆</div><h3>Win up to $2,500</h3><p class="small">Design the most resilient, cost-efficient architecture for our quarterly challenge. Judged by working architects.</p><div class="countdown mt1" data-countdown></div><a class="btn btn-primary btn-sm mt2" href="contests.html">Enter the challenge →</a></div>
+<div class="card"><div class="ico">❤️</div><h3>Keep Cloud.Design free</h3><p class="small">No paywalls. Supporters fund new architectures, tools and open-source diagrams.</p><a class="btn btn-ghost btn-sm mt1" href="support.html">Support the project →</a></div>
+<div class="card"><div class="ico">💼</div><h3>Hiring cloud talent?</h3><p class="small">Post roles to an audience of practicing architects, SREs and DevOps engineers — or join our contributor network.</p><a class="btn btn-ghost btn-sm mt1" href="careers.html">Hire or get hired →</a></div>
+</div></section>
+
+<section class="section alt"><div class="container" style="max-width:860px">
+<div class="section-head"><h2>Frequently asked questions</h2></div>
+<details><summary>Is Cloud.Design really free?</summary><div>Yes. Every architecture, calculator and guide is free. We are funded by clearly labeled ads, sponsorships, partner referral fees and community donations.</div></details>
+<details><summary>Are you affiliated with AWS, Microsoft or Google?</summary><div>No. Cloud.Design is independent, which is why we can compare all three clouds honestly. Trademarks belong to their owners.</div></details>
+<details><summary>How does expert matching work?</summary><div>You fill a 60-second brief. A human reviews it and introduces up to three certified partners who fit your cloud, budget and timeline. It is free for you; partners pay us for qualified introductions.</div></details>
+<details><summary>How accurate are the cost estimates?</summary><div>They use public on-demand list prices for US regions and are meant for early-stage comparison. Always validate with the provider's official calculator before committing budget.</div></details>
+<details><summary>Can I contribute an architecture?</summary><div>Yes — submit via the <a href="contact.html">contact form</a> or open a pull request on our GitHub. Accepted contributors get author credit and a backlink.</div></details>
+</div></section>
+</main>
+<footer class="site"><div class="container">
+<div class="foot">
+<div><a class="logo" href="index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.1 9.1 4.5 4.5 0 0 0 7 18Z" fill="#fff"/></svg></span><span>Cloud<span class="dot">.</span>Design</span></a>
+<p class="small mt1">The independent hub for designing, costing and building cloud architecture on AWS, Azure and Google Cloud.</p>
+<form class="form" data-form="newsletter" data-success="You're in! Check your inbox for the Architecture Starter Kit."><input class="hp" name="_gotcha" tabindex="-1" autocomplete="off"><div class="flex" style="flex-wrap:nowrap"><input type="email" name="email" placeholder="you@company.com" required aria-label="Email"><button class="btn btn-primary btn-sm" type="submit">Subscribe</button></div><span class="small muted">Weekly architecture teardown. 1-click unsubscribe.</span></form>
+<div class="social"><a class="icon-btn" data-social="youtube" aria-label="YouTube">▶</a><a class="icon-btn" data-social="x" aria-label="X">𝕏</a><a class="icon-btn" data-social="linkedin" aria-label="LinkedIn">in</a><a class="icon-btn" data-social="github" aria-label="GitHub">⌥</a></div>
+</div>
+<div><h4>Design</h4><ul><li><a href="architectures.html">Reference Architectures</a></li><li><a href="patterns.html">Design Patterns</a></li><li><a href="tools.html#estimator">Cost Estimator</a></li><li><a href="tools.html#quiz">Well-Architected Score</a></li><li><a href="tools.html#instances">Instance Prices</a></li></ul></div>
+<div><h4>Learn</h4><ul><li><a href="learn.html">Guides</a></li><li><a href="learn.html#videos">Videos</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="directory.html">Tools Directory</a></li><li><a href="contests.html">Contests</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="get-matched.html">Get Matched</a></li><li><a href="get-matched.html?service=migration">Cloud Migration</a></li><li><a href="get-matched.html?service=cost">Cost Optimization</a></li><li><a href="partners.html">Become a Partner</a></li><li><a href="careers.html">Careers &amp; Talent</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="support.html">Donate / Support</a></li><li><a href="support.html#advertise">Advertise</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></li></ul></div>
+</div>
+<div class="foot-bottom"><span>© <span data-year></span> Cloud.Design · Independent. Not affiliated with AWS, Microsoft or Google. Some links are affiliate or sponsored and clearly labeled.</span><span><a href="privacy.html#cookies">Cookie settings</a></span></div>
+</div></footer>
+
+<div class="cookie" role="dialog" aria-label="Cookie consent"><p>We use cookies for analytics and to show ads that keep Cloud.Design free. Choose what you allow — see our <a href="privacy.html">privacy policy</a>.</p><div class="flex"><button class="btn btn-primary btn-sm" data-consent="all">Accept all</button><button class="btn btn-ghost btn-sm" data-consent="essential">Essential only</button></div></div>
+
+<div class="modal" id="exit-modal"><div class="box" role="dialog" aria-modal="true" aria-labelledby="exit-t"><button class="icon-btn x" aria-label="Close">✕</button>
+<span class="badge hot">FREE DOWNLOAD</span><h2 id="exit-t" class="mt1">Before you go — grab the Cloud Architecture Starter Kit</h2>
+<p>18 editable reference diagrams, the 47-step migration checklist and a cost-optimization cheat sheet.</p>
+<form class="form" data-form="newsletter" data-success="Sent! Check your inbox for the Starter Kit."><input class="hp" name="_gotcha" tabindex="-1" autocomplete="off"><input type="hidden" name="source" value="exit-intent"><input type="email" name="email" placeholder="Work email" required aria-label="Work email"><button class="btn btn-primary btn-block" type="submit">Send me the kit →</button><span class="small muted center">No spam. Unsubscribe anytime.</span></form></div></div>
+
+<a class="btn btn-primary sticky-cta" href="get-matched.html">💬 Free architecture consult</a>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js" defer></script>
+</body></html>
